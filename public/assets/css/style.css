@@ -1,0 +1,21 @@
+
+h1,h2,h3,form {
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#left{ 
+    margin: 10;
+    padding: 30;
+    float:left; 
+    width:50%; 
+}
+#right{
+    margin: 10;
+    padding: 30;
+    float: right;
+    width:50%
+}

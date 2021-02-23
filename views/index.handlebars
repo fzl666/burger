@@ -1,22 +1,30 @@
 <h1>Eat-Da-Burger!</h1>
+<div>
+<img src='/assets/img/burger-png-image.png' width='300'>
+<h2>Add A Burger</h2>
+<form id='add-burger'>
+<input type="text" id="bg" name="burger-name">
+<button type="submit">Make a Burger</button>
+</form>
+
+<div id='left'>
 <ul>
+<h3>Burgers Wishlist!</h3>
 {{#each burgers}}
 {{#unless devoured}}
 {{> burgers/burger-block sleep=true}}
 {{/unless}}
 {{/each}}
 </ul>
-<div>
-<h2>Add A Burger</h2>
-<form id='add-burger'>
-<input type="text" name="burger-name">
-<button type="submit">Make a Burger</button>
-</form>
-<ul>  
 </div>
+
+<div id='Right'>
+<ul >  
+<h3>Devoured Burgers!</h3>
 {{#each burgers}}
 {{#if devoured}}
 {{> burgers/burger-block sleep=true}}
 {{/if}}
 {{/each}}
 </ul>
+</div>

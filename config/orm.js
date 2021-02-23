@@ -57,7 +57,6 @@ const orm = {
       cb(result);
     });
   },
-  
   updateOne(table, objColVals, condition, cb) {
     let queryString = `UPDATE ${table}`;
 
@@ -75,7 +74,7 @@ const orm = {
       cb(result);
     });
   },
-  delete(table, condition, cb) {
+ delete(table, condition, cb) {
     let queryString = `DELETE FROM ${table}`;
     queryString += ' WHERE ';
     queryString += condition;
